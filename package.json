@@ -1,0 +1,62 @@
+{
+  "name": "auth-jwt",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.3",
+    "apollo-server-core": "^3.4.0",
+    "apollo-server-express": "^3.4.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "dataloader": "^2.0.0",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "^4.16.4",
+    "graphql": "^15.6.1",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.11",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.13",
+    "prettier": "2.4.1"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "node"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:node/recommended"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "no-unused-vars": 0,
+      "no-console": 0,
+      "node/no-unpublished-require": 1
+    }
+  }
+}
